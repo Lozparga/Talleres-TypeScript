@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    /* Opciones fundamentales */
+    "target": "es2020", 
+    "module": "esnext", 
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+   
+    "strict": true,
+    "skipLibCheck": true
+  },
+ 
+  "include": ["src/**/*.ts"]
+}
+

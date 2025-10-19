@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Series de Televisión</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Encabezado verde estilo imagen */
+        .header-bar {
+            background-color: #009999; /* tono verde azulado */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-bar img {
+            height: 40px;
+        }
+
+        /* Tabla */
+        .table thead {
+            background-color: #007bff; /* azul bootstrap */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <!-- Encabezado estilo TV Series -->
+        <div class="header-bar mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="TV Icon">
+            <span>TV Series</span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Channel</th>
+                            <th scope="col">Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series-body">
+                        <!-- Aquí se cargan las series dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="col-md-6">
+                <!-- Espacio lateral (por si necesitas agregar algo más) -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div id="average-seasons"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./dist/main.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
